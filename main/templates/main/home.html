@@ -1,0 +1,28 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block content%}
+
+<style type="text/css">
+p{
+	background-color: rgba(255, 255, 255, 0.3);
+	font-size: 17px;
+	text-align: justify;
+	font-weight: bold; 
+	margin-top: 30px;}
+</style>
+
+<div style="background-image: url({%static '/img/fondo1.jpg'%}); background-size: cover; min-height: 75vh;">
+	<div class="container" style="padding-top: 0;">
+		<div class="row">
+			<div class="col-md-6">
+				<h1>Misión</h1>
+				<p>Somos una organización dedicada a edificar sueños, construimos fortalezas de familia, resguardando lo que amas con colaboradores altamente capacitados que aseguran el éxito de nuestros métodos constructivos y de mantenimiento preventivo y correctivo a cada paso.</p>
+			</div>
+			<div class="col-md-6">
+				<h1>Visión</h1>
+				<p>Liderar en el ramo de la construcción 2017 del estado de hidalgo ejecutando obras con las mejores técnicas preventivas y correctivas, mantenimiento y vanguardia en el abastecimiento de materiales que superen las expectativas de nuestros clientes en servicio, tiempo y capacidad.</p>
+			</div>	
+		</div>
+	</div>
+</div>
+{%endblock content%}

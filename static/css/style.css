@@ -1,0 +1,102 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+header{
+	padding: 0;
+	margin: 0;
+	background-image: url('../img/agua.jpg');
+	background-size: cover;
+	width: 100%;
+	padding: 15px 0;
+	color: #fff;
+	text-align: center;
+}
+
+header img{
+	height: 70px;
+}
+nav ul{
+	background-color: #a12528;
+	overflow: hidden;
+	color: #fff;
+	padding: 0;
+	text-align: center;
+	margin: 0;
+	transition: max-height 0.5s;
+}
+
+nav ul li{
+	display: inline-block;
+	padding: 20px;
+}
+
+nav ul a, nav ul a:hover{
+	text-decoration: none;
+	color: inherit;
+}
+
+nav ul li:hover{
+	background-color: #501213;
+}
+
+.menu-icon{
+	width: 100%;
+	background: #a12528;
+	text-align: left;
+	box-sizing: border-box;
+	padding: 15px 10px;
+	cursor: pointer;
+	color: #fff;
+	display: none;
+	text-align: right;
+}
+
+@media (max-width: 580px){
+	nav ul{
+		max-height: 0px;
+	}
+
+	.showing{
+		max-height: 20em;
+	}
+
+	nav ul li{
+		box-sizing: border-box;
+		width: 100%;
+		padding: 15px;
+		text-align: left;
+	}
+
+	.menu-icon{
+		display: block;
+	}
+}
+
+.col-mueble{
+
+}
+
+.col-mueble img{
+	width: 100%;
+	transition: 0.5s;
+}
+
+.col-mueble img:hover{
+	width: 105%;
+	transition: 0.5s;
+}
+
+.lista-caracteristicas{
+	list-style: none;
+}
+
+h1{
+	text-align: center;
+}
+
+.container .row{
+	padding-top: 50px;
+}

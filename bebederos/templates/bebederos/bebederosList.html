@@ -1,0 +1,31 @@
+{%extends 'base.html'%}
+
+{%block content%}
+	
+	<div class="container">
+
+		<h1 style="padding-top: 50px;">Bebederos institucionales</h1>
+		<div class="row">
+
+	{%for bebedero in bebederos%}
+			
+			<div class="col-md-4 col-mueble">
+				<img src="{{bebedero.foto.url}}">
+				<ul class="lista-caracteristicas">
+					<li>Modelo: {{bebedero.modelo}}</li>
+					<li>Nivel educativo: {{bebedero.nivel_educativo }}</li>
+					<li>Rango de usuarios: {{bebedero.rango_usuarios}}</li>
+				</ul>
+			</div>
+
+	{%empty%}
+
+			<div class="col-12">
+			Lista de bebederos vacia
+			</div>
+
+	{%endfor%}
+
+		</div>
+	</div>
+{%endblock content%}
